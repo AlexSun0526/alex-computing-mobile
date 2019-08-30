@@ -32,7 +32,7 @@
     self.greetingLable.text = @"Hello Alex";
 }
 - (IBAction)sliderDidChange:(UISlider *)sender {
-    self.sliderValue = @(sender.value);;;
+    self.sliderValue = @(sender.value);
 }
 
 

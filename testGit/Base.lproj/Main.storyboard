@@ -18,36 +18,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="qEZ-Th-3J0">
-                                <rect key="frame" x="18" y="436" width="378" height="30"/>
-                                <connections>
-                                    <action selector="sliderDIdchange:" destination="BYZ-38-t0r" eventType="valueChanged" id="ReV-cw-5hG"/>
-                                    <action selector="sliderDidChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="4rD-8O-vMa"/>
-                                </connections>
-                            </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FgX-Zx-v91">
-                                <rect key="frame" x="20" y="341" width="374" height="114"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
-                                <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEX-XO-ZxO">
+                                <rect key="frame" x="20" y="393" width="374" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="wpi-mR-LcQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="MTx-20-9p5">
+                                <rect key="frame" x="18" y="443" width="378" height="31"/>
+                                <connections>
+                                    <action selector="sliderDidChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="aXs-e8-xmV"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="qEZ-Th-3J0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="392" id="AQw-7m-doi"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qEZ-Th-3J0" secondAttribute="bottom" constant="397" id="FJE-TG-G8y"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FgX-Zx-v91" secondAttribute="trailing" constant="20" id="PMG-Uj-gEV"/>
-                            <constraint firstItem="FgX-Zx-v91" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="kir-qP-iS4"/>
-                            <constraint firstItem="qEZ-Th-3J0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="mO8-YP-wcu"/>
-                            <constraint firstItem="FgX-Zx-v91" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="297" id="o9i-ZG-B8f"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qEZ-Th-3J0" secondAttribute="trailing" constant="20" id="qJg-43-qAF"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FgX-Zx-v91" secondAttribute="bottom" constant="407" id="rQe-HY-KzT"/>
-                            <constraint firstItem="qEZ-Th-3J0" firstAttribute="top" secondItem="FgX-Zx-v91" secondAttribute="bottom" constant="-19" id="ydl-8Q-45f"/>
+                            <constraint firstItem="DEX-XO-ZxO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="4nh-Bp-LKV"/>
+                            <constraint firstItem="MTx-20-9p5" firstAttribute="top" secondItem="DEX-XO-ZxO" secondAttribute="bottom" constant="8" id="9WC-3O-geQ"/>
+                            <constraint firstItem="MTx-20-9p5" firstAttribute="leading" secondItem="DEX-XO-ZxO" secondAttribute="trailing" constant="-374" id="9fv-16-ESr"/>
+                            <constraint firstItem="MTx-20-9p5" firstAttribute="leading" secondItem="DEX-XO-ZxO" secondAttribute="trailing" constant="-374" id="Fbs-N2-JUE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MTx-20-9p5" secondAttribute="trailing" constant="20" id="WHc-fO-Uln"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DEX-XO-ZxO" secondAttribute="trailing" constant="20" id="Yhv-iY-KHl"/>
+                            <constraint firstItem="MTx-20-9p5" firstAttribute="top" secondItem="DEX-XO-ZxO" secondAttribute="bottom" constant="8" id="awE-sn-9RQ"/>
+                            <constraint firstItem="DEX-XO-ZxO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="349" id="j2T-I4-G2q"/>
+                            <constraint firstItem="MTx-20-9p5" firstAttribute="top" secondItem="DEX-XO-ZxO" secondAttribute="bottom" constant="8" id="klG-f1-V0H"/>
+                            <constraint firstItem="MTx-20-9p5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="xv3-Uw-jQt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="greetingLable" destination="FgX-Zx-v91" id="XRq-WX-cd7"/>
+                        <outlet property="greetingLable" destination="DEX-XO-ZxO" id="tbA-84-UbK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
